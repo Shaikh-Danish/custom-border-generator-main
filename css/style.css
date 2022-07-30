@@ -1,0 +1,312 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.heading {
+	text-align: center;
+	font-size: 36px;
+	font-weight: 500;
+	margin: 20px 30px;
+}
+
+.heading img {
+	width: 35px;
+}
+
+.usage {
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	margin: 0 10px 40px 10px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	max-width: 850px;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+#select-border {
+	margin-left: 10px;
+}
+
+#fill-clr,
+#border-clr {
+	border: none;
+	height: 35px;
+	width: 35px;
+	background-color: transparent;
+}
+
+.border-result {
+	width: 200px;
+	height: 200px;
+	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='6 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+	margin: 50px auto;
+}
+
+.border-btns {
+	display: flex;
+	justify-content: center;
+	margin: 0 40px 50px 40px;
+}
+
+.border-btns button {
+	background: none;
+	border: none;
+}
+
+.style-2:focus img {
+	border: 2px solid black;
+	border-radius: 50%;
+}
+
+.style-1:focus img,
+.style-3:focus img,
+.style-4:focus img,
+.style-5:focus img {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+.border-btns button img {
+	width: 75%;
+}
+
+.units-one {
+	margin: 0 25px 30px 25px;
+	border-bottom: .5px solid rgba(0, 0, 0, .4);
+	padding-bottom: 12px;
+}
+
+.units-one #width {
+	margin-right: 7px;
+}
+
+#width,
+#height,
+#dash-arr {
+	width: 47%;
+	height: 35px;
+	box-sizing: border-box;
+	padding: 4px 8px;
+	font-size: 16px;
+	outline: none;
+	border: 1px solid rgba(0, 0,0 , .2);
+	border-radius: 3px;
+}
+
+.wid-label,
+.hgt-label {
+	margin: 10px 0;
+	font-size: 16px;
+	display: inline-block;
+}
+
+.wid-label {
+	margin-right: 113px;
+}
+
+.units-one small {
+	margin-top: 7px;
+	color: rgba(0, 0, 0, .5);
+}
+
+.units-two {
+margin: 0 25px;
+}
+
+.units-two input[type="range"] {
+	display: block;
+	width: 100%;
+	height: 7px;
+	background-color: #DEE1E6;
+	border-radius: 10px;
+	-webkit-appearance: none;
+	margin: 15px 0;
+	box-sizing: border-box;
+}
+
+small {
+	display: block;
+	margin: 0px 0 10px 0;
+}
+
+hr {
+	border: .3px solid rgba(0, 0,0 , .3);
+	margin: 30px 0;
+}
+
+.dash-label {
+	margin-right: 40px;
+}
+
+#dash-arr {
+	width: 25%;
+	margin: 10px 0 5px 0;
+}
+
+.dash-offset {
+	margin-top: 10px;
+	display: inline-block;
+}
+
+#select-box {
+	margin-left: 40px;
+	height: 35px;
+	width: 60%;
+	padding: 7px;
+	
+}
+
+#result {
+	margin: 2.5em 1.5em;
+}
+
+#copy-code {
+	width: 100%;				
+	height: 100px;
+	outline: none;		
+	font-size: 1rem;
+}
+
+#copy-code:focus {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+.copy-btn {
+	border: 1px solid #56A4F0;
+	padding: .5em 2.8em;
+	background: none;
+	margin: .8em 0;
+	border-radius: 5px;
+	color: #56A4F0;
+	font-size: 15px;
+}
+
+.copy-btn:hover {
+	background-color: #007AFF;
+	color: white;
+}
+
+#result .btn {
+	padding: .5em 3.1em;
+}
+
+#how-to-use {
+	margin: 0 25px;
+	max-width: 500px;
+}
+
+#how-to-use h1 {
+	font-weight: 500;
+	margin-bottom: 12px;
+}
+
+#how-to-use p {
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+#how-to-use .code-eg {
+	height: 157px;
+	overflow-x: scroll;
+	background-color: #FAFAFA;
+	padding: 15px 25px;
+	font-size: 14px;
+}
+
+.selector,
+.value {
+	color: #B69A59;
+}
+
+.property {
+	margin-left: 15px;
+	color: #84B984;
+}
+
+.data{
+color: #84B984;		
+}
+
+.comment {
+	margin-left: 15px;
+	color: #BABBBF;
+}
+
+#how-it-works {
+	margin: 0 20px 40px 25px;
+	max-width: 500px;
+}
+
+#how-it-works h1 {
+	font-weight: 500;
+	margin: 20px 0 15px 0;
+}
+
+#how-it-works p {
+	font-size: 17px;
+	line-height: 1.3;
+}
+
+#how-it-works p span {
+	background-color: #FDF8E4;
+	color: #E45E98;
+	padding: 3px 2px;
+}
+
+@media screen and (min-width:768px){
+	main {
+					flex-direction: row;								
+					margin: 0 1em;
+					margin: 0 auto;
+	}				
+	#select-border {
+					margin-left: 1.5em;
+	}
+	.border-btns,
+	.border-result {
+					margin-top: 5em;
+	}
+	#result {
+					margin: auto;	
+					max-width: 950px;
+	}				
+	.heading img {
+					width: 43px;
+	}
+	#how-to-use,
+	#how-it-works {
+					margin: 1.5em auto;
+	}
+	#copy-code {
+					width: 90%;
+					margin: 1em 2em;
+	}
+	.copy-btn {
+					margin-left: 3em;
+	}				
+}
+
+
+@media screen and (min-width:1024px){
+	#how-to-use,
+	#how-it-works {
+					max-width: 600px;
+	}
+	
+	#how-to-use p,
+	#how-it-works p,
+	#how-to-use .code-eg {
+					font-size: 1.5em;
+	}
+	#how-to-use .code-eg {
+					height: 240px;
+	}
+}
